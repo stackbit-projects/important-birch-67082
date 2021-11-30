@@ -1,0 +1,159 @@
+stackbitVersion: ~0.3.0
+dataDir: ''
+models:
+  scully_routes:
+    type: data
+    label: Scully Routes
+    file: Static-Site/assets/scully-routes.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: route
+          label: Route
+  stackbit:
+    type: data
+    label: Stackbit
+    file: Static-Site/stackbit.yaml
+    fields:
+      - type: string
+        name: stackbitVersion
+        label: Stackbit Version
+      - type: string
+        name: dataDir
+        label: Data Dir
+      - type: object
+        name: models
+        label: Models
+        fields:
+          - type: object
+            name: scully_routes
+            label: Scully Routes
+            fields:
+              - type: string
+                name: type
+                label: Type
+              - type: string
+                name: label
+                label: Label
+              - type: string
+                name: file
+                label: File
+              - type: boolean
+                name: isList
+                label: Is List
+              - type: object
+                name: items
+                label: Items
+                fields:
+                  - type: string
+                    name: type
+                    label: Type
+                  - type: list
+                    name: fields
+                    label: Fields
+                    items:
+                      type: object
+                      fields:
+                        - type: string
+                          name: type
+                          label: Type
+                        - type: string
+                          name: name
+                          label: Name
+                        - type: string
+                          name: label
+                          label: Label
+  scully_routes_1:
+    type: data
+    label: Scully Routes 1
+    file: dist/angular/assets/scully-routes.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: route
+          label: Route
+  scully_routes_2:
+    type: data
+    label: Scully Routes 2
+    file: dist/static/assets/scully-routes.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: route
+          label: Route
+  tsconfig:
+    type: data
+    label: Tsconfig
+    file: scully/tsconfig.json
+    fields:
+      - type: boolean
+        name: compileOnSave
+        label: Compile On Save
+      - type: object
+        name: compilerOptions
+        label: Compiler Options
+        fields:
+          - type: boolean
+            name: esModuleInterop
+            label: Es Module Interop
+          - type: boolean
+            name: importHelpers
+            label: Import Helpers
+          - type: list
+            name: lib
+            label: Lib
+            items:
+              type: string
+          - type: string
+            name: module
+            label: Module
+          - type: string
+            name: moduleResolution
+            label: Module Resolution
+          - type: boolean
+            name: sourceMap
+            label: Source Map
+          - type: string
+            name: target
+            label: Target
+          - type: list
+            name: types
+            label: Types
+            items:
+              type: string
+          - type: boolean
+            name: skipLibCheck
+            label: Skip Lib Check
+          - type: boolean
+            name: skipDefaultLibCheck
+            label: Skip Default Lib Check
+          - type: list
+            name: typeRoots
+            label: Type Roots
+            items:
+              type: string
+          - type: boolean
+            name: allowSyntheticDefaultImports
+            label: Allow Synthetic Default Imports
+      - type: list
+        name: exclude
+        label: Exclude
+        items:
+          type: string
+  scully_routes_3:
+    type: data
+    label: Scully Routes 3
+    file: src/assets/scully-routes.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: route
+          label: Route
